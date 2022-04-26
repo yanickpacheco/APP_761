@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "4942 - Egra Itau Masiva", "4942 - Egra Itau Masiva.rptproj", "{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Debug|Default.ActiveCfg = Debug
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Debug|Default.Build.0 = Debug
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Debug|Default.Deploy.0 = Debug
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.DebugLocal|Default.Build.0 = DebugLocal
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Release|Default.ActiveCfg = Release
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Release|Default.Build.0 = Release
+		{33ACBE2E-8823-41BD-81E0-9B3C3E4E8FA2}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76C072DD-1975-4864-A306-1D9176D22888}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srvcl-tfs:8080/tfs/callsouth
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 4942\u0020-\u0020Egra\u0020Itau\u0020Masiva.rptproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <MyType>WindowsForms</MyType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{149DFC16-FA46-4EDE-B64C-D58ECC9EED9D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyName>APP_761</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>APP_761.frmVenta</StartupObject>
+    <AssemblyMajorVersion>1</AssemblyMajorVersion>
+    <AssemblyMinorVersion>0</AssemblyMinorVersion>
+    <AssemblyRevisionNumber>0</AssemblyRevisionNumber>
+    <GenerateRevisionNumber>False</GenerateRevisionNumber>
+    <AssemblyCompanyName>CALLSOUTH</AssemblyCompanyName>
+    <RootNamespace>APP_761</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>0DEF16E8ADC6F05DF520E7696330C46E5081ADD9</ManifestCertificateThumbprint>
+    <ManifestKeyFile>APP_4362_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <SignAssembly>false</SignAssembly>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\192.168.1.14\Programas CRM\CRM_761\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\192.168.1.14\Programas CRM\CRM_761\</InstallUrl>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>APP_761.xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DefineDebug>True</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>.\bin\</OutputPath>
+    <DocumentationFile>APP_761.xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DefineDebug>False</DefineDebug>
+    <DefineTrace>True</DefineTrace>
+    <DefineConstants>Win32=True</DefineConstants>
+    <PlatformTarget>x86</PlatformTarget>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icono Llamar 2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\clsAdicional.vb" />
+    <Compile Include="Clases\clsBeneficiario.vb" />
+    <Compile Include="Clases\clsFuncionesDatatable.vb" />
+    <Compile Include="Clases\clsSoapNeo.vb" />
+    <Compile Include="Clases\clsFuncionesComunes.vb" />
+    <Compile Include="Formularios\PopUp\frmAdicionales.Designer.vb">
+      <DependentUpon>frmAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmDescanso.designer.vb">
+      <DependentUpon>frmDescanso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmDescanso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmEsperaDescanso.Designer.vb">
+      <DependentUpon>frmEsperaDescanso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmEsperaDescanso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmExclusiones.Designer.vb">
+      <DependentUpon>frmExclusiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmExclusiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVenta.Designer.vb">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdicional.Designer.vb">
+      <DependentUpon>frmAdicional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdicional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAnexos.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmAnexos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAnexos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmBeneficiario.Designer.vb">
+      <DependentUpon>frmBeneficiario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\PopUp\frmBeneficiario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.vb">
+      <SubType>Code</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRegrabaciones.Designer.vb">
+      <DependentUpon>frmRegrabaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRegrabaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniTool.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modCliente.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modDenegar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModTelefono.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <DependentUpon>Application.myapp</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WSSNeoTel\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\PopUp\frmAdicionales.resx">
+      <DependentUpon>frmAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PopUp\frmDescanso.resx">
+      <DependentUpon>frmDescanso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PopUp\frmEsperaDescanso.resx">
+      <DependentUpon>frmEsperaDescanso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PopUp\frmExclusiones.resX">
+      <DependentUpon>frmExclusiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmVenta.resX">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdicional.resx">
+      <DependentUpon>frmAdicional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAnexos.resX">
+      <DependentUpon>frmAnexos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PopUp\frmBeneficiario.resx">
+      <DependentUpon>frmBeneficiario.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmLogin.resX">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRegrabaciones.resx">
+      <DependentUpon>frmRegrabaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colacion.png" />
+    <None Include="Resources\Capacitacion.png" />
+    <None Include="Resources\Baño.png" />
+    <None Include="Resources\Break.png" />
+    <None Include="Resources\FInDescanso2.png" />
+    <None Include="Resources\FinDescanso.png" />
+    <None Include="Resources\pausar-llamada.png" />
+    <None Include="Resources\Imagen Cordial Phone1.jpg" />
+    <None Include="Resources\Imagen Cordial Phone.jpg" />
+    <None Include="Resources\iconGuardar2.png" />
+    <None Include="Resources\iconGuardar.png" />
+    <None Include="app.config" />
+    <None Include="Imagen\Coberturas.jpg" />
+    <Content Include="Icono Llamar 2.ico" />
+    <Content Include="Imagen\Headphone with Mic.gif" />
+    <Content Include="Imagen\LogoMok.bmp" />
+    <Content Include="Imagen\LogoCallsouth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Imagen\FechaIzquierda.png" />
+    <None Include="Imagen\FechaDerecha.png" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSSNeoTel\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WSSNeoTel\webservice.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Imagen\Headphone with Mic.gif">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Imagen\LogoCallsouth.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Imagen\LogoMok.bmp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Interop.Scripting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://190.98.236.19/neoapi/webservice.asmx%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WSSNeoTel\</RelPath>
+      <UpdateFromURL>http://190.98.236.19/neoapi/webservice.asmx%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>APP_WSSNeoTel_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BI\BI.vbproj">
+      <Project>{dad9b1e9-ea85-4035-a8aa-e348ad6819bb}</Project>
+      <Name>BI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\Entidad.vbproj">
+      <Project>{de1f9be5-16b0-4eb3-a777-6ade5ad300de}</Project>
+      <Name>Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
